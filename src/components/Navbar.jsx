@@ -59,7 +59,19 @@ const Navbar = () => {
               </Link>
             ))}
           </ul>
-          {/*  */}
+        </div>
+        {/* btn for large devices */}
+        <div className='space-x-12 hidden lg:flex items-center'>
+          <a
+            href='/'
+            className='hidden lg:flex items-center text-brandPrimary
+hover:text-gray900'
+          >
+            Login
+          </a>
+          <button className='bg-brandPrimary text-white py-2 px-4 transition-all duration-300 rounded hover:bg-neutralGrey'>
+            Sign up
+          </button>
         </div>
       </nav>
       ;
