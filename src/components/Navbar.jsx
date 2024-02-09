@@ -44,11 +44,6 @@ const Navbar = () => {
             href=''
             className='text-2xl font-semibold flex items-center space-x-3'
           >
-            <img
-              src={'logo'}
-              alt=''
-              className='w-10 inline-block items-center'
-            />{' '}
             <span className='text-[#263238]'>BridalHairbyTrish</span>
           </a>
           <ul className='md:flex space-x-12 hidden'>
@@ -67,26 +62,42 @@ const Navbar = () => {
           </ul>
           {/* btn for large devices */}
           <div className='space-x-12 hidden lg:flex items-center'>
-            <a
-              href='/'
-              className='hidden lg:flex items-center text-brandPrimary
-hover:text-gray900'
-            >
-              Login
-            </a>
             <button className='bg-brandPrimary text-white py-2 px-4 transition-all duration-300 rounded hover:bg-neutralGrey'>
-              Sign up
+              Book Us
             </button>
           </div>
+
+          {/* menu btn for mobile devices */}
           <div className='md:hidden'>
-            <button className=''>
+            <button
+              onClick={toggleMenu}
+              className='text-neutralGrey focus:outline-none focus:text-gray-500'
+            >
               {isMenuOpen ? (
-                <FaXmark className='h-6 w-6 text-neutralDGrey' />
+                <FaXmark className='h-6 w-6' />
               ) : (
-                <FaBars className='h-6 w-6 text-neutralGrey' />
+                <FaBars className='h-6 w-6 ' />
               )}
             </button>
           </div>
+        </div>
+        <div
+          className={`space-y-4 px-4 py-7 mt-16 bg-brandPrimary ${
+            isMenuOpen ? 'block fixed top-0 left-0 right-0' : 'hidden'
+          }`}
+        >
+          {navItems.map(({ link, path }) => (
+            <Link
+              to={path}
+              spy={true}
+              smooth={true}
+              offset={-100}
+              className='block text-base hover:underline text-white first:font-medium'
+              key={path}
+            >
+              {link}
+            </Link>
+          ))}
         </div>
       </nav>
     </header>
