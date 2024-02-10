@@ -1,5 +1,7 @@
 import React from 'react';
 import { Card } from 'flowbite-react';
+import keratinImg from '../assets/imgs/braid-6.jpg';
+import haircutImg from '../assets/imgs/haircut.jpg';
 
 const Services = () => {
   return (
@@ -23,7 +25,7 @@ const Services = () => {
           <div className='overflow-hidden h-[15rem] shadow-none'>
             <img
               alt='Calligraphy Cuts service'
-              src='/src/assets/imgs/haircut.jpg'
+              src={haircutImg}
               className='card-image -mt-20'
             />
           </div>
@@ -48,8 +50,8 @@ const Services = () => {
         <Card className='max-w-sm'>
           <div className='overflow-hidden h-[15rem]'>
             <img
-              alt='Calligraphy Cuts service'
-              src='/src/assets/imgs/braid-6.jpg'
+              alt='keratin service'
+              src={keratinImg}
               className='card-image '
             />
           </div>
