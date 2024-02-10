@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <header className='w-full bg-white md:bg-transparent fixed top-0 left-0 right-0'>
       <nav
-        className={`py-4 lg:px-14 ${
+        className={`py-4 lg:px-14 bg-gray900 ${
           isSticky
             ? 'sticky top-0 left-0 right-0 border-b bg-white duration-300'
             : ''
@@ -44,7 +44,9 @@ const Navbar = () => {
             href=''
             className='text-2xl font-semibold flex items-center space-x-3'
           >
-            <span className='text-[#263238]'>BridalHairbyTrish</span>
+            <span className='text-brandPrimary'>
+              Bridal<span className='text-white'>Hair</span>byTrish
+            </span>
           </a>
           <ul className='md:flex space-x-12 hidden'>
             {navItems.map(({ link, path }) => (
@@ -53,7 +55,7 @@ const Navbar = () => {
                 spy={true}
                 smooth={true}
                 offset={-100}
-                className='block text-base text-gray900 hover:text-brandPrimary first:font-medium'
+                className='block text-base text-white cursor-pointer hover:text-brandPrimary first:font-medium'
                 key={path}
               >
                 {link}
