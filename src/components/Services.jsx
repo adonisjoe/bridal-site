@@ -9,7 +9,7 @@ const Services = () => {
       <div className='text-center my-8'>
         <p className='text-neutralGrey'></p>
       </div>
-      <div className='flex items-start gap-20'>
+      <div className='flex flex-col md:flex-row items-center md:items-start gap-20'>
         <Card className=' shadow-none border-none'>
           <h5 className='text-5xl font-bold tracking-tight text-neutralGrey dark:text-white'>
             Our Bridal Services
