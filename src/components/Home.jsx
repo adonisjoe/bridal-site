@@ -8,13 +8,13 @@ const Home = () => {
   return (
     <div className='bg-neutralSilver'>
       <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen '>
-        <Carousel className='w-full mx-auto'>
-          <div className='my-28 px-40 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 bg-secondaryColor'>
+        <Carousel className='w-full mx-auto bg-secondaryColor'>
+          <div className='my-0  px-20 lg:px-40 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 bg-secondaryColor'>
             <div>
-              <img src={hero1} style={{ width: '20rem' }} alt='hero image' />
+              <img src={hero1} className='w-40 lg:w-[30rem]' alt='hero image' />
             </div>
             <div className='md:w-1/2'>
-              <h1 className='text-6xl font-semibold mb-4 text-neutralGrey md:w-3/4 leading-snug'>
+              <h1 className='text-3xl md:text-5xl  lg:text-6xl font-semibold mb-4 text-neutralGrey md:w-3/4 leading-snug'>
                 Embrace{' '}
                 <span className='text-brandPrimary leading-snug'>
                   Elegance.
@@ -26,12 +26,12 @@ const Home = () => {
               <button className='btn-primary'>Book Us</button>
             </div>
           </div>
-          <div className='my-28 px-40 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 bg-secondaryColor'>
+          <div className='my-0  px-20 lg:px-40 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-10 bg-secondaryColor'>
             <div>
-              <img src={hero} style={{ width: '20rem' }} alt='hero image' />
+              <img src={hero} className='w-40 lg:w-[30rem]' alt='hero image' />
             </div>
             <div className='md:w-1/2'>
-              <h1 className='text-6xl font-semibold mb-4 text-neutralGrey md:w-3/4 leading-snug'>
+              <h1 className='text-3xl md:text-5xl  lg:text-6xl font-semibold mb-4 text-neutralGrey md:w-3/4 leading-snug'>
                 Where{' '}
                 <span className='text-brandPrimary leading-snug'> Dreams</span>{' '}
                 Take Shape.
@@ -42,12 +42,12 @@ const Home = () => {
               <button className='btn-primary'>Book Us</button>
             </div>
           </div>
-          <div className='my-28 px-40 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 bg-secondaryColor'>
+          <div className='my-0  px-20 lg:px-40 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 bg-secondaryColor'>
             <div>
-              <img src={hero2} style={{ width: '20rem' }} alt='hero image' />
+              <img src={hero2} className='w-40 lg:w-[30rem]' alt='hero image' />
             </div>
             <div className='md:w-1/2'>
-              <h1 className='text-6xl font-semibold mb-4 text-neutralGrey md:w-3/4 leading-snug'>
+              <h1 className='text-3xl md:text-5xl  lg:text-6xl font-semibold mb-4 text-neutralGrey md:w-3/4 leading-snug'>
                 Eternal{' '}
                 <span className='text-brandPrimary leading-snug'>Love</span>{' '}
                 Begins Here.
