@@ -1,4 +1,8 @@
 /* eslint-disable no-undef */
+import flowbitePlugin from 'flowbite/plugin';
+
+const plugins = [flowbitePlugin];
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -20,5 +24,5 @@ export default {
       },
     },
   },
-  plugins: [require('flowbite/plugin')],
+  plugins: [plugins],
 };
