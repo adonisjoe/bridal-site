@@ -27,7 +27,7 @@ const Home = () => {
         <div className='bg-colorFrame w-fit p-4 flex items-center justify-center'>
           <img
             src={hero4}
-            alt='Image 3'
+            alt='bridal-photo'
             className='rounded-2xl max-w-full h-auto '
           />
         </div>
@@ -35,7 +35,7 @@ const Home = () => {
         <div className='bg-colorFrame p-4 flex items-center justify-center'>
           <img
             src={hero1}
-            alt='Image 3'
+            alt='bridal-photo'
             className='rounded-2xl max-w-full h-auto'
           />
         </div>
@@ -43,7 +43,7 @@ const Home = () => {
         <div className='bg-colorFrame  p-4 flex items-center justify-center'>
           <img
             src={hero3}
-            alt='Image 3'
+            alt='bridal-photo'
             className='rounded-2xl max-w-full w-fit h-auto'
           />
         </div>
@@ -51,7 +51,7 @@ const Home = () => {
         <div className='bg-colorFrame p-4 flex items-center justify-center'>
           <img
             src={hero2}
-            alt='Image 3'
+            alt='bridal-photo'
             className='rounded-2xl max-w-full h-auto'
           />
         </div>
