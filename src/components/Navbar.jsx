@@ -5,7 +5,7 @@ import { Button, Navbar } from 'flowbite-react';
 function Nav() {
   return (
     <Navbar fluid rounded className='bg-primaryColor'>
-      <Navbar.Brand href='https://flowbite-react.com'>
+      <Navbar.Brand href='https://BridalHairbyTrish.com'>
         <span className='self-center whitespace-nowrap text-xl lg:text-2xl font-fontSacra font-semibold dark:text-white'>
           <span className='text-tertiaryColor'>Bridal</span>
           <span className='text-secondaryColor'>Hair</span>{' '}
@@ -28,9 +28,6 @@ function Nav() {
         </Navbar.Link>
         <Navbar.Link className='text-secondaryColor' href='#'>
           Services
-        </Navbar.Link>
-        <Navbar.Link className='text-secondaryColor' href='#'>
-          Pricing
         </Navbar.Link>
         <Navbar.Link className='text-secondaryColor' href='#'>
           Contact

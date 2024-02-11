@@ -23,12 +23,12 @@ const Home = () => {
         </span>
       </h1>
 
-      <div className='grid grid-cols-2  md:grid-cols-2  md:gap-4 lg:grid-cols-4 gap-4'>
+      <div className='grid grid-cols-2 p-5  md:grid-cols-2  md:gap-4 lg:grid-cols-4 gap-4'>
         <div className='bg-colorFrame w-fit p-4 flex items-center justify-center'>
           <img
             src={hero4}
             alt='Image 3'
-            className='rounded-lg max-w-full h-auto '
+            className='rounded-2xl max-w-full h-auto '
           />
         </div>
 
@@ -36,7 +36,7 @@ const Home = () => {
           <img
             src={hero1}
             alt='Image 3'
-            className='rounded-lg max-w-full h-auto'
+            className='rounded-2xl max-w-full h-auto'
           />
         </div>
 
@@ -44,7 +44,7 @@ const Home = () => {
           <img
             src={hero3}
             alt='Image 3'
-            className='rounded-lg max-w-full w-fit h-auto'
+            className='rounded-2xl max-w-full w-fit h-auto'
           />
         </div>
 
@@ -52,7 +52,7 @@ const Home = () => {
           <img
             src={hero2}
             alt='Image 3'
-            className='rounded-lg max-w-full h-auto'
+            className='rounded-2xl max-w-full h-auto'
           />
         </div>
       </div>

@@ -4,12 +4,12 @@ import hero11 from '../assets/imgs/braid-11.jpg';
 
 const Faq = () => {
   return (
-    <div className='flex flex-col-reverse items-center lg:px-20 py-10 lg:flex-row justify-center md:items-center gap-4 lg:gap-10'>
-      <div className='w-full md:w-1/1 my-10'>
+    <div className='flex flex-col-reverse items-center lg:px-20 py-10 lg:flex-row justify-center md:items-center gap-4 lg:gap-10 bg-primaryColor'>
+      <div className='w-full md:w-1/1 my-10 bg-primaryColorLight p-10'>
         <h5 className='text-5xl text-center lg:text-left mb-10  font-bold tracking-tight font-fontScript text-neutralGrey dark:text-white text-tertiaryColor'>
           FAQ
         </h5>
-        <Accordion collapseAll className='w-full'>
+        <Accordion collapseAll className='w-full '>
           <Accordion.Panel>
             <Accordion.Title className='font-fontSans font-bold'>
               IS TRISH A PROFESSIONALLY LICENSED STYLIST?
