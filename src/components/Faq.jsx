@@ -4,7 +4,7 @@ import hero11 from '../assets/imgs/braid-11.jpg';
 
 const Faq = () => {
   return (
-    <div className='w-full h-full flex flex-col-reverse lg:flex-row items-center lg:items-center lg:gap-20 justify-center lg:my-32 px-5 lg:px-10'>
+    <div className='flex flex-col-reverse items-center lg:px-20 py-10 lg:flex-row justify-center md:items-center gap-4 lg:gap-10'>
       <div className='w-full md:w-1/1 my-10'>
         <h5 className='text-5xl text-center lg:text-left mb-10  font-bold tracking-tight font-fontScript text-neutralGrey dark:text-white'>
           FAQ

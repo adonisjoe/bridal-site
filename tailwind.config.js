@@ -9,14 +9,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        neutralSilver: '#ESF7FA',
-        secondaryColor: '#F0EDDC',
-        neutralDGrey: ' #4D4D4D',
-        brandPrimary: '#F7347C',
-        neutralGrey: '#717171',
+        tertiaryColor: '#EF6236',
+        secondaryColor: '#2F7155',
+        primaryColorLight: '#f5f3e9',
+        primaryColor: '#F0EDDD',
+        colorFrame: '#B6A8CC',
+        colorGrey: '#4D4D4D',
         neutralGreyLight: '#919191',
-        gray900: '#18191f',
-        gray900Bg: 'rgba(0, 0, 0, .7)',
+        colorWhite: '#fff',
+        colorDark: '#000',
       },
       fontFamily: {
         fontScript: ['Dancing Script', 'cursive'],

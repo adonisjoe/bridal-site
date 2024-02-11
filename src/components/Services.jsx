@@ -6,7 +6,7 @@ import hero5 from '../assets/imgs/braid-10.jpg';
 
 const Services = () => {
   return (
-    <div className='md:px-14 px-4 py-16 md:py-10 max-w-screen-2xl mx-auto '>
+    <div className='md:px-14 px-4 py-16 md:py-10 max-w-screen-2xl mx-auto bg-primaryColor'>
       <div className=' flex flex-col lg:flex-row justify-center text-center md:items-center gap-4 lg:gap-10'>
         <div className='flex items-center flex-col mx-auto justify-between w-52 h-52 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-64 lg:h-64 rounded-full overflow-hidden'>
           <img

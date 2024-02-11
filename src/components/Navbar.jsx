@@ -4,14 +4,16 @@ import { Button, Navbar } from 'flowbite-react';
 
 function Nav() {
   return (
-    <Navbar fluid rounded>
+    <Navbar fluid rounded className='bg-primaryColor'>
       <Navbar.Brand href='https://flowbite-react.com'>
         <span className='self-center whitespace-nowrap text-xl font-semibold dark:text-white'>
           BridalHairbyTrish
         </span>
       </Navbar.Brand>
       <div className='flex md:order-2'>
-        <Button>Book Now</Button>
+        <Button gradientDuoTone='purpleToPink' pill>
+          Book Now
+        </Button>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
