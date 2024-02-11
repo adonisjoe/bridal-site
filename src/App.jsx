@@ -1,5 +1,5 @@
 import './App.css';
-import { Foot } from './components/Footer';
+import Footer from './components/Footer.jsx';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Services from './components/Services';
@@ -12,7 +12,7 @@ function App() {
       <Home />
       <Services />
       <Faq />
-      <Foot />
+      <Footer />
     </>
   );
 }
