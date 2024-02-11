@@ -16,6 +16,11 @@ export default {
         neutralGrey: '#717171',
         neutralGreyLight: '#919191',
         gray900: '#18191f',
+        gray900Bg: 'rgba(0, 0, 0, .7)',
+      },
+      fontFamily: {
+        fontScript: ['Dancing Script', 'cursive'],
+        fontSans: ['Montserrat Alternates', 'cursive'],
       },
     },
   },

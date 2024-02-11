@@ -1,109 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
-import { FaXmark, FaBars } from 'react-icons/fa6';
-const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
+'use client';
 
-  //set toggle Menu
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-  useEffect(() => {
-    const handleScroll = () => {
-      if (Window.scrollY > 100) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.addEventListener('scroll', handleScroll);
-    };
-  });
+import { Button, Navbar } from 'flowbite-react';
 
-  const navItems = [
-    { link: 'Home', path: 'home' },
-    { link: 'Service', path: 'service' },
-    { link: 'Booking', path: 'booking' },
-    { link: 'Contact', path: 'contact' },
-    { link: 'About', path: 'about' },
-  ];
+function Nav() {
   return (
-    <header className='w-full bg-white md:bg-transparent fixed top-0 left-0 right-0'>
-      <nav
-        className={`py-4 lg:px-14 bg-gray900 ${
-          isSticky
-            ? 'sticky top-0 left-0 right-0 border-b bg-white duration-300'
-            : ''
-        }`}
-      >
-        <div className='flex justify-between items-center text-base gap-8'>
-          <a
-            href=''
-            className='text-2xl font-semibold flex items-center space-x-3'
-          >
-            <span className='text-brandPrimary'>
-              Bridal<span className='text-white'>Hair</span>byTrish
-            </span>
-          </a>
-          <ul className='md:flex space-x-12 hidden'>
-            {navItems.map(({ link, path }) => (
-              <Link
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-100}
-                className='block text-base text-white cursor-pointer hover:text-brandPrimary first:font-medium'
-                key={path}
-              >
-                {link}
-              </Link>
-            ))}
-          </ul>
-          {/* btn for large devices */}
-          <div className='space-x-12 hidden lg:flex items-center'>
-            <button className='bg-brandPrimary text-white py-2 px-4 transition-all duration-300 rounded hover:bg-neutralGrey'>
-              Book Us
-            </button>
-          </div>
-
-          {/* menu btn for mobile devices */}
-          <div className='md:hidden'>
-            <button
-              onClick={toggleMenu}
-              className='text-neutralGrey focus:outline-none focus:text-gray-500'
-            >
-              {isMenuOpen ? (
-                <FaXmark className='h-6 w-6' />
-              ) : (
-                <FaBars className='h-6 w-6 ' />
-              )}
-            </button>
-          </div>
-        </div>
-        <div
-          className={`space-y-4 px-4 py-7 mt-16 bg-brandPrimary ${
-            isMenuOpen ? 'block fixed top-0 left-0 right-0' : 'hidden'
-          }`}
-        >
-          {navItems.map(({ link, path }) => (
-            <Link
-              to={path}
-              spy={true}
-              smooth={true}
-              offset={-100}
-              className='block text-base hover:underline text-white first:font-medium'
-              key={path}
-            >
-              {link}
-            </Link>
-          ))}
-        </div>
-      </nav>
-    </header>
+    <Navbar fluid rounded>
+      <Navbar.Brand href='https://flowbite-react.com'>
+        <span className='self-center whitespace-nowrap text-xl font-semibold dark:text-white'>
+          BridalHairbyTrish
+        </span>
+      </Navbar.Brand>
+      <div className='flex md:order-2'>
+        <Button>Book Now</Button>
+        <Navbar.Toggle />
+      </div>
+      <Navbar.Collapse>
+        <Navbar.Link href='#' active>
+          Home
+        </Navbar.Link>
+        <Navbar.Link href='#'>About</Navbar.Link>
+        <Navbar.Link href='#'>Services</Navbar.Link>
+        <Navbar.Link href='#'>Pricing</Navbar.Link>
+        <Navbar.Link href='#'>Contact</Navbar.Link>
+      </Navbar.Collapse>
+    </Navbar>
   );
-};
-
-export default Navbar;
+}
+export default Nav;

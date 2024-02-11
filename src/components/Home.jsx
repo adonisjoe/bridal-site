@@ -1,64 +1,42 @@
 import React from 'react';
-import { Carousel } from 'flowbite-react';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import hero from '../assets/imgs/braid-9.png';
 import hero1 from '../assets/imgs/braid-4.png';
 import hero2 from '../assets/imgs/braid-2.png';
+import hero3 from '../assets/imgs/braid-7.jpg';
+import hero4 from '../assets/imgs/braid-6.jpg';
+import hero5 from '../assets/imgs/braid-10.jpg';
 
 const Home = () => {
+  const [text] = useTypewriter({
+    words: ['Bridal. Braids. Guide'],
+    loop: {},
+  });
+
   return (
-    <div className='bg-neutralSilver'>
-      <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen '>
-        <Carousel className='w-full mx-auto bg-secondaryColor'>
-          <div className='my-0  px-20 lg:px-40 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 bg-secondaryColor'>
-            <div>
-              <img src={hero1} className='w-40 lg:w-[30rem]' alt='hero image' />
-            </div>
-            <div className='md:w-1/2'>
-              <h1 className='text-3xl md:text-5xl  lg:text-6xl font-semibold mb-4 text-neutralGrey md:w-3/4 leading-snug'>
-                Embrace{' '}
-                <span className='text-brandPrimary leading-snug'>
-                  Elegance.
-                </span>
-              </h1>
-              <p className='text-neutralGrey text-base mb-8'>
-                Your Bridal Bliss Awaits
-              </p>
-              <button className='btn-primary'>Book Us</button>
-            </div>
-          </div>
-          <div className='my-0  px-20 lg:px-40 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-10 bg-secondaryColor'>
-            <div>
-              <img src={hero} className='w-40 lg:w-[30rem]' alt='hero image' />
-            </div>
-            <div className='md:w-1/2'>
-              <h1 className='text-3xl md:text-5xl  lg:text-6xl font-semibold mb-4 text-neutralGrey md:w-3/4 leading-snug'>
-                Where{' '}
-                <span className='text-brandPrimary leading-snug'> Dreams</span>{' '}
-                Take Shape.
-              </h1>
-              <p className='text-neutralGrey text-base mb-8'>
-                Begin Your Bridal Story Today
-              </p>
-              <button className='btn-primary'>Book Us</button>
-            </div>
-          </div>
-          <div className='my-0  px-20 lg:px-40 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 bg-secondaryColor'>
-            <div>
-              <img src={hero2} className='w-40 lg:w-[30rem]' alt='hero image' />
-            </div>
-            <div className='md:w-1/2'>
-              <h1 className='text-3xl md:text-5xl  lg:text-6xl font-semibold mb-4 text-neutralGrey md:w-3/4 leading-snug'>
-                Eternal{' '}
-                <span className='text-brandPrimary leading-snug'>Love</span>{' '}
-                Begins Here.
-              </h1>
-              <p className='text-neutralGrey text-base mb-8'>
-                Find Your Perfect Bridal Ensemble
-              </p>
-              <button className='btn-primary'>Book Us</button>
-            </div>
-          </div>
-        </Carousel>
+    <div className=''>
+      <h1 className='mt-8 mb-8 text-center text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-fontScript'>
+        {text}
+
+        <Cursor />
+      </h1>
+
+      <div className='grid grid-cols-2  md:grid-cols-2  md:gap-4 lg:grid-cols-4 gap-4'>
+        <div className='bg-gray-200 w-fit p-4 flex items-center justify-center'>
+          <img src={hero4} alt='Image 3' className='max-w-full h-auto ' />
+        </div>
+
+        <div className='bg-gray-200 p-4 flex items-center justify-center'>
+          <img src={hero1} alt='Image 3' className='max-w-full h-auto' />
+        </div>
+
+        <div className='bg-gray-200  p-4 flex items-center justify-center'>
+          <img src={hero3} alt='Image 3' className='max-w-full w-fit h-auto' />
+        </div>
+
+        <div className='bg-gray-200 p-4 flex items-center justify-center'>
+          <img src={hero2} alt='Image 3' className='max-w-full h-auto' />
+        </div>
       </div>
     </div>
   );
