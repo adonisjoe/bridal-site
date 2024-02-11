@@ -6,7 +6,7 @@ const Faq = () => {
   return (
     <div className='flex flex-col-reverse items-center lg:px-20 py-10 lg:flex-row justify-center md:items-center gap-4 lg:gap-10'>
       <div className='w-full md:w-1/1 my-10'>
-        <h5 className='text-5xl text-center lg:text-left mb-10  font-bold tracking-tight font-fontScript text-neutralGrey dark:text-white'>
+        <h5 className='text-5xl text-center lg:text-left mb-10  font-bold tracking-tight font-fontScript text-neutralGrey dark:text-white text-tertiaryColor'>
           FAQ
         </h5>
         <Accordion collapseAll className='w-full'>

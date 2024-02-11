@@ -6,8 +6,11 @@ function Nav() {
   return (
     <Navbar fluid rounded className='bg-primaryColor'>
       <Navbar.Brand href='https://flowbite-react.com'>
-        <span className='self-center whitespace-nowrap text-xl font-semibold dark:text-white'>
-          BridalHairbyTrish
+        <span className='self-center whitespace-nowrap text-xl lg:text-2xl font-fontSacra font-semibold dark:text-white'>
+          <span className='text-tertiaryColor'>Bridal</span>
+          <span className='text-secondaryColor'>Hair</span>{' '}
+          <span className='text-secondaryColor'>by</span>
+          <span className='text-tertiaryColor'>Trish</span>
         </span>
       </Navbar.Brand>
       <div className='flex md:order-2'>
@@ -20,10 +23,18 @@ function Nav() {
         <Navbar.Link href='#' active>
           Home
         </Navbar.Link>
-        <Navbar.Link href='#'>About</Navbar.Link>
-        <Navbar.Link href='#'>Services</Navbar.Link>
-        <Navbar.Link href='#'>Pricing</Navbar.Link>
-        <Navbar.Link href='#'>Contact</Navbar.Link>
+        <Navbar.Link className='text-secondaryColor' href='#'>
+          About
+        </Navbar.Link>
+        <Navbar.Link className='text-secondaryColor' href='#'>
+          Services
+        </Navbar.Link>
+        <Navbar.Link className='text-secondaryColor' href='#'>
+          Pricing
+        </Navbar.Link>
+        <Navbar.Link className='text-secondaryColor' href='#'>
+          Contact
+        </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );

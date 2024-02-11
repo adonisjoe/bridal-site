@@ -16,7 +16,7 @@ const Services = () => {
           />
         </div>
         <Card className='shadow-none border-none lg:w-[70%] text-center lg:text-left'>
-          <h5 className='text-5xl font-bold tracking-tight font-fontScript text-neutralGrey text-center lg:text-left dark:text-white'>
+          <h5 className='text-5xl text-tertiaryColor font-bold tracking-tight font-fontScript text-neutralGrey text-center lg:text-left dark:text-white'>
             About Us
           </h5>
           <p className=' leading-normal  font-[300] text-neutralGrey font-fontSans dark:text-gray-400 mb-5 sm:text-sm md:text-base lg:text-lg xl:text-xl '>

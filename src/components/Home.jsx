@@ -15,10 +15,12 @@ const Home = () => {
 
   return (
     <div className='bg-primaryColor'>
-      <h1 className='pt-8 pb-8 text-center text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-fontScript'>
+      <h1 className='pt-8 pb-8 text-center text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-fontScript text-secondaryColor'>
         {text}
 
-        <Cursor />
+        <span className='text-tertiaryColor'>
+          <Cursor />
+        </span>
       </h1>
 
       <div className='grid grid-cols-2  md:grid-cols-2  md:gap-4 lg:grid-cols-4 gap-4'>

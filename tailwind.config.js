@@ -22,6 +22,7 @@ export default {
       fontFamily: {
         fontScript: ['Dancing Script', 'cursive'],
         fontSans: ['Montserrat Alternates', 'cursive'],
+        fontSacra: ['Sacramento', 'cursive'],
       },
     },
   },
