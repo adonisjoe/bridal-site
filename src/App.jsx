@@ -1,18 +1,24 @@
 import './App.css';
-import Footer from './components/Footer.jsx';
+import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Services from './components/Services';
-import Faq from './components/Faq';
-
+import Home from './pages/Home';
+import Booking from './pages/Booking';
+import About from './pages/About';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Foot from './components/Footer';
 function App() {
   return (
     <>
-      <Navbar />
-      <Home />
-      <Services />
-      <Faq />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/booking' element={<Booking />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+        <Foot />
+      </BrowserRouter>
     </>
   );
 }

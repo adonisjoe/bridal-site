@@ -7,7 +7,7 @@ import hero3 from '../assets/imgs/braid-8.jpg';
 import hero4 from '../assets/imgs/braid-6.jpg';
 import hero5 from '../assets/imgs/braid-10.jpg';
 
-const Home = () => {
+const Hero = () => {
   const [text] = useTypewriter({
     words: ['Bridal. Braids. Guide'],
     loop: {},
@@ -60,4 +60,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hero;
