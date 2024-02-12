@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import { Footer } from 'flowbite-react';
 
 const Foot = () => {
@@ -13,16 +13,19 @@ const Foot = () => {
             <span className='text-primaryColor'>by</span>
             <span className='text-tertiaryColor'>Trish</span>
           </span>
-          <Footer.LinkGroup>
-            <Footer.Link className='text-primaryColorLight' href='#'>
-              About
-            </Footer.Link>
-            <Footer.Link className='text-primaryColorLight' href='#'>
-              Booking
-            </Footer.Link>
-            <Footer.Link className='text-primaryColorLight' href='#'>
+          <Footer.LinkGroup className='flex justify-between mt-5 lg:mt-0'>
+            <Link className='text-primaryColorLight ml-5' to='/'>
+              Home
+            </Link>
+            <Link to='/contact' className='text-primaryColorLight ml-5'>
               Contact
-            </Footer.Link>
+            </Link>
+            <Link to='/about' className='text-primaryColorLight ml-5'>
+              About
+            </Link>
+            <Link to='/booking' className='text-primaryColorLight ml-5'>
+              Booking
+            </Link>
           </Footer.LinkGroup>
         </div>
         <Footer.Divider />

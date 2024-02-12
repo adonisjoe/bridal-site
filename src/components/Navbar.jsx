@@ -31,7 +31,7 @@ function Nav() {
           About
         </Link>
         <Link to='/booking' className='text-secondaryColor'>
-          Services
+          Booking
         </Link>
       </Navbar.Collapse>
     </Navbar>
