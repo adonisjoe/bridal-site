@@ -1,6 +1,7 @@
 'use client';
 
 import { Button, Navbar } from 'flowbite-react';
+import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
@@ -20,18 +21,18 @@ function Nav() {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <Navbar.Link href='#' active>
+        <Link className='text-secondaryColor' to='/'>
           Home
-        </Navbar.Link>
-        <Navbar.Link className='text-secondaryColor' href='#'>
-          About
-        </Navbar.Link>
-        <Navbar.Link className='text-secondaryColor' href='#'>
-          Services
-        </Navbar.Link>
-        <Navbar.Link className='text-secondaryColor' href='#'>
+        </Link>
+        <Link to='/contact' className='text-secondaryColor'>
           Contact
-        </Navbar.Link>
+        </Link>
+        <Link to='/about' className='text-secondaryColor'>
+          About
+        </Link>
+        <Link to='/booking' className='text-secondaryColor'>
+          Services
+        </Link>
       </Navbar.Collapse>
     </Navbar>
   );

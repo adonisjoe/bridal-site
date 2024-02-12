@@ -1,7 +1,5 @@
 import React from 'react';
-import { Card, Carousel } from 'flowbite-react';
-import keratinImg from '../assets/imgs/braid-6.jpg';
-import haircutImg from '../assets/imgs/haircut.jpg';
+import { Card } from 'flowbite-react';
 import hero5 from '../assets/imgs/braid-10.jpg';
 
 const Services = () => {
@@ -33,7 +31,7 @@ const Services = () => {
           </p>
 
           <div className='flex justify-center lg:justify-start'>
-            <button className='btn-primary max-w-fit'>See Works</button>
+            <a className='btn-primary max-w-fit'>See Works</a>
           </div>
         </Card>
       </div>
