@@ -14,3 +14,7 @@ header {
 .hero-container {
   @apply my-28 px-40 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 bg-secondaryColor;
 }
+
+.ant-input::placeholder {
+  font-size: 0.8rem; /* text-xs size in Tailwind */
+}
