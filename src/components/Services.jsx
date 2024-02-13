@@ -1,18 +1,29 @@
 import React from 'react';
 import { Card } from 'flowbite-react';
 import hero5 from '../assets/imgs/braid-10.jpg';
+import background from '../assets/backgrounds/bg.png';
 
 const Services = () => {
   return (
     <div className='md:px-14 px-4 py-16 md:py-10 mx-auto bg-primaryColor'>
       <div className=' flex flex-col lg:flex-row justify-center text-center md:items-center gap-4 lg:gap-10'>
-        <div className='flex items-center flex-col mx-auto justify-between w-52 h-52 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-64 lg:h-64 rounded-full overflow-hidden'>
-          <img
-            src={hero5}
-            alt='About Photo'
-            className='w-full h-full object-cover'
-          />
+        <div className='flex items-center flex-col mx-auto justify-between w-52 h-52 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-64 lg:h-64 rounded-full '>
+          <div className='relative'>
+            <img
+              src={background}
+              alt='Background'
+              className='absolute inset-0 w-full h-full object-cover'
+            />
+            <div className='flex items-center justify-center w-52 h-52 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-64 lg:h-64 rounded-full overflow-hidden'>
+              <img
+                src={hero5}
+                alt='Hero5 Photo'
+                className='w-full h-full object-cover'
+              />
+            </div>
+          </div>
         </div>
+
         <Card className='bg-primaryColorLight shadow-none border-none lg:w-[70%] text-center lg:text-left'>
           <h5 className='text-5xl text-tertiaryColor font-bold tracking-tight font-fontScript text-neutralGrey text-center lg:text-left dark:text-white'>
             About Us

@@ -1,5 +1,6 @@
 'use client';
 import { Accordion } from 'flowbite-react';
+import background from '../assets/backgrounds/bg.png';
 import hero11 from '../assets/imgs/braid-11.jpg';
 
 const Faq = () => {
@@ -62,12 +63,21 @@ const Faq = () => {
         </Accordion>
       </div>
       <div className='bd-red-700 w-[70%] h-full flex justify-center '>
-        <div className='flex items-center justify-center flex-col w-52 h-52 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-64 lg:h-64 rounded-full overflow-hidden'>
-          <img
-            src={hero11}
-            alt='About Photo'
-            className='w-full h-full object-cover'
-          />
+        <div className='flex items-center justify-center flex-col w-52 h-52 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-64 lg:h-64 rounded-full'>
+          <div className='relative'>
+            <img
+              src={background}
+              alt='Background'
+              className='absolute inset-0 w-full h-full object-cover'
+            />
+            <div className='flex items-center justify-center w-52 h-52 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-64 lg:h-64 overflow-hidden rounded-full '>
+              <img
+                src={hero11}
+                alt='Hero5 Photo'
+                className='w-full h-full object-cover'
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
